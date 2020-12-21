@@ -7,7 +7,6 @@ from flask_migrate import Migrate
 
 app = Flask(__name__)
 
-app._static_folder = '/images'
 
 # Key for Forms
 app.config['SECRET_KEY'] = 'mysecretkey'
