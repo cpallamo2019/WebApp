@@ -1,17 +1,18 @@
-
 {% extends "base.html" %}
 {% block content %}
 
 <div class="container">
-  
-  <h1>Delete a project?</h1>
-  <p>Fill out the form to remove the project from the list.</p>
+
+  <h1>Add theme to a Project</h1>
+  <p>Add a new thematic with the form below:</p>
   <form method="POST">
       {# This hidden_tag is a CSRF security feature. #}
       {{ form.hidden_tag() }}
+      {{ form.name.label }} {{ form.name() }}
       {{ form.id.label }} {{ form.id() }}
       {{ form.submit() }}
   </form>
+
 
 
 </div>
